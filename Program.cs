@@ -8,7 +8,8 @@ namespace New_folder__5_
     {
         static void Main(string[] args)
         {
-            List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Console.WriteLine("Enter list of numbers");
+            var numbers = Console.ReadLine().Split(" ").Select(x => Convert.ToInt32(x)).ToList();
             List<int> finalList = new List<int>();
 
             finalList = numbers
